@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="mcPi" location="/home/mihanych/workspace/mcPi" platform="/opt/xilinx/platforms/xilinx_u200_xdma_201830_1/xilinx_u200_xdma_201830_1.xpfm" platformUID="xilinx:u200:xdma:201830.1" systemProject="mcPi_system" sysConfig="Linux" cpu="" cpuInstance="" os="linux">
+  <configuration name="Emulation-SW" id="com.xilinx.sdx.opencl.config.sw_emu.1559082943" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <kernels name="pricer_kernel" sourceFile="src/pricer_kernel.cpp" xoccOptions="-I ../../montecarlo/include">
+          <computeUnits name="pricer_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <kernels name="pricer_kernel" sourceFile="src/pricer_kernel.cpp" xoccOptions="-I ../../montecarlo/include">
+          <computeUnits name="pricer_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.sdx.opencl.config.hw_emu.364680927">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="pricer_kernel" sourceFile="src/pricer_kernel.cpp" xoccOptions="-I ../../montecarlo/include">
+          <computeUnits name="pricer_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="pricer_kernel" sourceFile="src/pricer_kernel.cpp" xoccOptions="-I ../../montecarlo/include">
+          <computeUnits name="pricer_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="System" id="com.xilinx.sdx.opencl.config.hw.1997737383">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" hardwareOptimizationLevel="O_2" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="pricer_kernel" sourceFile="src/pricer_kernel.cpp" xoccOptions="-I ../../montecarlo/include">
+          <computeUnits name="pricer_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" hardwareOptimizationLevel="O_2" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="pricer_kernel" sourceFile="src/pricer_kernel.cpp" xoccOptions="-I ../../montecarlo/include">
+          <computeUnits name="pricer_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>

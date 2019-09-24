@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ASCII"?>
+<openclProject:OpenCLProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:openclProject="http://www.xilinx.com/openclproject" name="mcpi" location="/home/mihanych/workspace/mcpi" platform="/opt/xilinx/platforms/xilinx_u200_xdma_201830_1/xilinx_u200_xdma_201830_1.xpfm" platformUID="xilinx:u200:xdma:201830.1" systemProject="mcpi_system" sysConfig="Linux" cpu="" cpuInstance="" os="linux">
+  <configuration name="Emulation-SW" id="com.xilinx.sdx.opencl.config.sw_emu.1212718282">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <kernels name="mc_kernel" sourceFile="src/kernel.cpp" xoccOptions="-I ../../../montecarlo/include">
+          <computeUnits name="mc_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true">
+      <binaryContainers name="binary_container_1">
+        <kernels name="mc_kernel" sourceFile="src/kernel.cpp" xoccOptions="-I ../../../montecarlo/include">
+          <computeUnits name="mc_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Emulation-HW" id="com.xilinx.sdx.opencl.config.hw_emu.1328655759">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="mc_kernel" sourceFile="src/kernel.cpp" xoccOptions="-I ../../../montecarlo/include">
+          <computeUnits name="mc_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="openclProject:OpenCLOptions" kernelDebug="true" target="hw_emu">
+      <binaryContainers name="binary_container_1">
+        <kernels name="mc_kernel" sourceFile="src/kernel.cpp" xoccOptions="-I ../../../montecarlo/include">
+          <computeUnits name="mc_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="System" id="com.xilinx.sdx.opencl.config.hw.1311671160" dirty="true">
+    <configBuildOptions xsi:type="openclProject:OpenCLOptions" target="hw">
+      <binaryContainers name="binary_container_1">
+        <kernels name="mc_kernel" sourceFile="src/kernel.cpp" xoccOptions="-I ../../../montecarlo/include">
+          <computeUnits name="mc_kernel_1" slr=""/>
+        </kernels>
+      </binaryContainers>
+    </configBuildOptions>
+  </configuration>
+</openclProject:OpenCLProject>
