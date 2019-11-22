@@ -30,10 +30,25 @@ There are two versions of the code:
 
 * [Quasi Monte Carlo](../mcSVEqLinkStructNoteQ)
 
+## FPGA Metrics
 
+| Name            | BRAM_48K  | DSP48E  | FF  | LUT  |
+|-----------------|:---------:|--------:|----:|-----:|
+| Utilization (%) |  19       | 75      | 35  | 57   |
 
+## CPU vs GPU vs FPGA benchmarking
 
+| Hardware | Model                | MMpath/sec  | W   | paths/sec/mW  |
+|----------|:--------------------:|------------:|----:|--------------:|
+| CPU      | Intel Xeon E5-2686v4 | 0.427       | 110 | 4             |
+| FPGA     | Xilinx Alveo U200    | 2.222       | 26  | 85            |
+| GPU      | Nvidia V100 16GB     | 3.922       | 203 | 20            |
 
+## Power estimation
+
+* CPU: Intel SoC Watch
+* GPU: NVIDIA SMI
+* FPGA: Vivado Power Estimation
 
 
 
