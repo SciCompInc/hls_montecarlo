@@ -37,6 +37,11 @@ There are two versions of the code:
 | Utilization (%) |  19       | 75      | 35  | 57   |
 
 ## CPU vs GPU vs FPGA benchmarking
+OS: Ubuntu 16.04LTS
+Development environments:
+* CPU: Intel Parallel Studio XE 2019 
+* GPU: CUDA 10.1, GCC 5.4.0
+* FPGA: SDAccel 2018.3
 
 | Hardware | Model                | MMpath/sec  | W   | paths/sec/mW  |
 |----------|:--------------------:|------------:|----:|--------------:|
