@@ -3,6 +3,7 @@
 Welcome to the HLS Monte Carlo repository. This repository contains the set of Monte Carlo
 simulation examples targeting Xilinx FPGA acceleration boards. The repository has the following structure:
 
+- docs - contains whitepaper and presentation 
 - libs - contains the third-party libraries used by examples
 - mcArithmAsian(Q) - Arithmetic Average Asian option (Quasi-) Monte Carlo code 
 - mcPi(Q) - the number pi estimation (Quasi-) Monte Carlo code 
